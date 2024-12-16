@@ -2,9 +2,9 @@ import './Home.css'
 import Header from './Componentes/Header';
 import SliderEventos from './Componentes/SliderEventos';
 import YoutubeVideos from './Componentes/YoutubeVideos';
-import Test from './Componentes/Test';
+
 import FrasesMotivacionales from './Componentes/FrasesMotivacionales';
-import Resenas from './Componentes/SliderResenas';
+
 import Footer from './Componentes/Footer';
 import  Chat from './Componentes/Chat';
 
