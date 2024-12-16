@@ -1,7 +1,6 @@
 import './Home.css'
 import Header from './Componentes/Header';
 import SliderEventos from './Componentes/SliderEventos';
-import YoutubeVideos from './Componentes/YoutubeVideos';
 
 import FrasesMotivacionales from './Componentes/FrasesMotivacionales';
 
@@ -15,11 +14,9 @@ function HomeLayout() {
     <>
       <div><Header/></div>
       <div><SliderEventos/></div>
-      {/* <div><YoutubeVideos/></div>  */}
-      {/* <div><Test/></div>  */}
       <div><Chat/></div>
-     <div><FrasesMotivacionales/></div>
-     {/* <div><Resenas/></div>  */}
+      <div><FrasesMotivacionales/></div>
+ 
      <div><Footer/></div>
     </>
   )
