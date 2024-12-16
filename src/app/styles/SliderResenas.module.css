@@ -1,0 +1,82 @@
+/* .slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0;
+}
+
+.imageContainer {
+  position:center;
+  width: 100%;
+  height: auto; 
+  overflow: hidden;
+}
+
+.image {
+  object-fit: cover; 
+} */
+
+
+/* SliderResenas.module.css */
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Máximo ancho del slider */
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease; /* Transición para el movimiento suave */
+}
+
+.reseña {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.reseñaItem {
+  min-width: 100%; /* Cada imagen ocupa el 100% del contenedor */
+  box-sizing: border-box;
+  padding: 10px; /* Espacio interno dentro de cada imagen */
+}
+
+.reseñaItem img {
+  width: 100%; /* La imagen ocupa todo el ancho del slider */
+  height: auto;
+  object-fit: cover; /* Asegura que la imagen se ajuste bien sin deformarse */
+  border-radius: 8px; /* Bordes redondeados para las imágenes */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.prevButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro y semi-transparente */
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.prevButton {
+  left: 10px; /* Posición del botón anterior */
+}
+
+.nextButton {
+  right: 10px; /* Posición del botón siguiente */
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo más oscuro cuando el ratón está sobre el botón */
+}
